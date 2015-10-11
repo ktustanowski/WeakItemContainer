@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5C0602131F44F7C120E9E1 /* Pods_WeakItemContainerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124A316410110E7F18796A83 /* Pods_WeakItemContainerTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9A84F2AA1BC6E8E000C19FD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F2A91BC6E8E000C19FD7 /* AppDelegate.swift */; };
 		9A84F2AC1BC6E8E000C19FD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F2AB1BC6E8E000C19FD7 /* ViewController.swift */; };
 		9A84F2AF1BC6E8E000C19FD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A84F2AD1BC6E8E000C19FD7 /* Main.storyboard */; };
 		9A84F2B11BC6E8E000C19FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A84F2B01BC6E8E000C19FD7 /* Assets.xcassets */; };
 		9A84F2B41BC6E8E000C19FD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A84F2B21BC6E8E000C19FD7 /* LaunchScreen.storyboard */; };
 		9A84F2BF1BC6E8E100C19FD7 /* WeakItemContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84F2BE1BC6E8E100C19FD7 /* WeakItemContainerTests.swift */; };
+		9A8B3B9E1BCAEFB9003836CA /* WeakItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8B3B9D1BCAEFB9003836CA /* WeakItemContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		124A316410110E7F18796A83 /* Pods_WeakItemContainerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeakItemContainerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		817A045E749369328ADCBE94 /* Pods-WeakItemContainerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeakItemContainerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeakItemContainerTests/Pods-WeakItemContainerTests.release.xcconfig"; sourceTree = "<group>"; };
 		9A84F2A61BC6E8E000C19FD7 /* WeakItemContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeakItemContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A84F2A91BC6E8E000C19FD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A84F2AB1BC6E8E000C19FD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		9A84F2BA1BC6E8E100C19FD7 /* WeakItemContainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeakItemContainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A84F2BE1BC6E8E100C19FD7 /* WeakItemContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakItemContainerTests.swift; sourceTree = "<group>"; };
 		9A84F2C01BC6E8E100C19FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A8B3B9D1BCAEFB9003836CA /* WeakItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakItemContainer.swift; sourceTree = "<group>"; };
+		EE5A94CA595136B85F6CB667 /* Pods-WeakItemContainerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeakItemContainerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeakItemContainerTests/Pods-WeakItemContainerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,18 +56,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5C0602131F44F7C120E9E1 /* Pods_WeakItemContainerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C66DE93802BB599FC5F3FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				124A316410110E7F18796A83 /* Pods_WeakItemContainerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A84F29D1BC6E8E000C19FD7 = {
 			isa = PBXGroup;
 			children = (
 				9A84F2A81BC6E8E000C19FD7 /* WeakItemContainer */,
 				9A84F2BD1BC6E8E100C19FD7 /* WeakItemContainerTests */,
 				9A84F2A71BC6E8E000C19FD7 /* Products */,
+				E9126B9C81A3F5834D3D25AB /* Pods */,
+				12C66DE93802BB599FC5F3FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +94,7 @@
 		9A84F2A81BC6E8E000C19FD7 /* WeakItemContainer */ = {
 			isa = PBXGroup;
 			children = (
+				9A8B3B9C1BCAEFB9003836CA /* WeakItemContainer */,
 				9A84F2A91BC6E8E000C19FD7 /* AppDelegate.swift */,
 				9A84F2AB1BC6E8E000C19FD7 /* ViewController.swift */,
 				9A84F2AD1BC6E8E000C19FD7 /* Main.storyboard */,
@@ -94,6 +112,23 @@
 				9A84F2C01BC6E8E100C19FD7 /* Info.plist */,
 			);
 			path = WeakItemContainerTests;
+			sourceTree = "<group>";
+		};
+		9A8B3B9C1BCAEFB9003836CA /* WeakItemContainer */ = {
+			isa = PBXGroup;
+			children = (
+				9A8B3B9D1BCAEFB9003836CA /* WeakItemContainer.swift */,
+			);
+			path = WeakItemContainer;
+			sourceTree = "<group>";
+		};
+		E9126B9C81A3F5834D3D25AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE5A94CA595136B85F6CB667 /* Pods-WeakItemContainerTests.debug.xcconfig */,
+				817A045E749369328ADCBE94 /* Pods-WeakItemContainerTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A84F2C61BC6E8E100C19FD7 /* Build configuration list for PBXNativeTarget "WeakItemContainerTests" */;
 			buildPhases = (
+				114D9C1227413EECDB4FB384 /* Check Pods Manifest.lock */,
 				9A84F2B61BC6E8E000C19FD7 /* Sources */,
 				9A84F2B71BC6E8E000C19FD7 /* Frameworks */,
 				9A84F2B81BC6E8E000C19FD7 /* Resources */,
+				87596D3C3F920B7A03AC11CD /* Embed Pods Frameworks */,
+				9A782B2135D271DCD6C5861C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +178,7 @@
 		9A84F29E1BC6E8E000C19FD7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Kamil Tustanowski";
 				TargetAttributes = {
@@ -191,6 +230,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		114D9C1227413EECDB4FB384 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87596D3C3F920B7A03AC11CD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeakItemContainerTests/Pods-WeakItemContainerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A782B2135D271DCD6C5861C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeakItemContainerTests/Pods-WeakItemContainerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A84F2A21BC6E8E000C19FD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -198,6 +285,7 @@
 			files = (
 				9A84F2AC1BC6E8E000C19FD7 /* ViewController.swift in Sources */,
 				9A84F2AA1BC6E8E000C19FD7 /* AppDelegate.swift in Sources */,
+				9A8B3B9E1BCAEFB9003836CA /* WeakItemContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +434,7 @@
 		};
 		9A84F2C71BC6E8E100C19FD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE5A94CA595136B85F6CB667 /* Pods-WeakItemContainerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WeakItemContainerTests/Info.plist;
@@ -358,6 +447,7 @@
 		};
 		9A84F2C81BC6E8E100C19FD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817A045E749369328ADCBE94 /* Pods-WeakItemContainerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WeakItemContainerTests/Info.plist;
@@ -387,6 +477,7 @@
 				9A84F2C51BC6E8E100C19FD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A84F2C61BC6E8E100C19FD7 /* Build configuration list for PBXNativeTarget "WeakItemContainerTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +486,7 @@
 				9A84F2C81BC6E8E100C19FD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
