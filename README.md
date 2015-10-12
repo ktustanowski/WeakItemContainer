@@ -1,5 +1,5 @@
 # WeakItemContainer
-Generic container for holding multiple weak references to objects. 
+Generic container, written in Swift, for holding weak references to objects. 
 #Why to use
 This container auto-maintains its items and automatically removes them right after they are deallocated by the system.
 #When to use
