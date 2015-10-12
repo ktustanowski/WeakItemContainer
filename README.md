@@ -7,6 +7,6 @@ When you have to hold (unordered!) list of objects but you don't want this objec
 # Containing Objective-C world inside
 This Container is build on top of NSHashTable and relies on its faboulous automatically-remove-item-when-nilled feature to maintain object list. Althought build with Objective-C class Weak Item Container contains Objective-C uncertainty inside and uses generic approach available in swift.
 #Unit tests
-Included.
+Included and available to run locally. Will run on Travis as soon as Xcode 7 & iOS 9 support will be added.
 #Installation
 Just drop-in into swift project - no cocoapods / carthage integration available at the moment.
