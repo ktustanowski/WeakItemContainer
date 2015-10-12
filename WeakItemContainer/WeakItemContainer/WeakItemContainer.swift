@@ -1,9 +1,7 @@
 //
 //  WeakItemContainer.swift
-//  PlayPlex
 //
-//  Created by Kamil Tustanowski on 07.10.2015.
-//  Copyright © 2015 Viacom. All rights reserved.
+//  Copyright © 2015 Kamil Tustanowski. All rights reserved.
 //
 
 import Foundation
@@ -23,7 +21,6 @@ class WeakItemContainer<Element> {
             assertionFailure("Not AnyObject passed to WeakItemContainer.append!")
             return
         }
-        
         weakItemsTable.addObject(item)
     }
     
@@ -45,7 +42,7 @@ class WeakItemContainer<Element> {
     }
     
     func count() -> Int {
-        return weakItemsTable.count
+        return items().count
     }
     
     func castedItems() -> [Element] {
