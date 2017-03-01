@@ -16,7 +16,7 @@ class WeakItemContainerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        self.container = WeakItemContainer<NSObject>()
+        container = WeakItemContainer<NSObject>()
     }
     
     func testIfCanAppendItem() {
@@ -24,12 +24,7 @@ class WeakItemContainerTests: XCTestCase {
         
         container.append(object)
         
-        guard let objectFromContainer = container.weakItemsTable.allObjects.last else {
-            fail()
-            return
-        }
-        
-        expect(objectFromContainer) === object
+        expect(self.container.count) == 1
     }
     
     func testIfCantHaveDuplicatedObjects() {
@@ -37,7 +32,7 @@ class WeakItemContainerTests: XCTestCase {
         container.append(object)
         container.append(object)
         
-        expect(self.container.weakItemsTable.count).to(equal(1))
+        expect(self.container.count) == 1
     }
     
     func testIfCanRemoveItem() {
@@ -46,7 +41,7 @@ class WeakItemContainerTests: XCTestCase {
         
         container.remove(object)
         
-        expect(self.container.weakItemsTable.count).to(equal(0))
+        expect(self.container.count) == 0
     }
     
     func testIfCanRemoveAllObjectsAtOnce() {
@@ -57,7 +52,7 @@ class WeakItemContainerTests: XCTestCase {
         
         container.removeAll()
         
-        expect(self.container.weakItemsTable.count).to(equal(0))
+        expect(self.container.count) == 0
     }
     
     func testIfCanRetrieveObjects() {
@@ -67,9 +62,7 @@ class WeakItemContainerTests: XCTestCase {
         container.append(objectOne)
         container.append(objectTwo)
         
-        let objects = container.items()
-        
-        expect(objects.count).to(equal(2))
+        expect(self.container.count) == 2
     }
     
     func testIfObjectsAddedToContainerCanBeDeallocated() {
@@ -78,9 +71,7 @@ class WeakItemContainerTests: XCTestCase {
         
         object = nil
         
-        let objects = container.items()
-        
-        expect(objects.count).to(equal(0))
+        expect(self.container.count) == 0
     }
     
     func testIfCanSeeObjectCount() {
@@ -88,10 +79,9 @@ class WeakItemContainerTests: XCTestCase {
         for object in objects {
             container.append(object)
         }
-
-        expect(self.container.count()).to(equal(objects.count))
-    }
-    
+        
+        expect(self.container.count) == objects.count
+    }    
 }
 
 // MARK: Helper methods

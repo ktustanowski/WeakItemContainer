@@ -5,8 +5,8 @@ target 'WeakItemContainer' do
 
 end
 
-target 'WeakItemContainerTests', :exclusive => true do
+target 'WeakItemContainerTests' do
     use_frameworks!
-    pod 'Nimble', '~> 2.0.0'
+    pod 'Nimble', '~> 6.0.1'
 end
 
