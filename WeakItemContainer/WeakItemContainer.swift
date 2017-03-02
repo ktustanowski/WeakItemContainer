@@ -62,7 +62,7 @@ public struct WeakItemContainer<Element> {
         
     }
 
-    var items: [Element] {
+    public var items: [Element] {
         return castedItems
     }
     
