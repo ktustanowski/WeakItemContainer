@@ -62,6 +62,10 @@ public struct WeakItemContainer<Element> {
         
     }
 
+    var items: [Element] {
+        return castedItems
+    }
+    
     fileprivate var castedItems: [Element] {
         var castedItems = [Element]()
         

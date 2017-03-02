@@ -62,7 +62,11 @@ class WeakItemContainerTests: XCTestCase {
         container.append(objectOne)
         container.append(objectTwo)
         
-        expect(self.container.count) == 2
+        let items = container.items
+        
+        expect(items.count) == 2
+        expect(items.first) === objectOne
+        expect(items.last) === objectTwo
     }
     
     func testIfObjectsAddedToContainerCanBeDeallocated() {
