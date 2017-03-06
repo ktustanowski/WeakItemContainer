@@ -19,6 +19,12 @@ class WeakItemContainerTests: XCTestCase {
         container = WeakItemContainer<NSObject>()
     }
     
+    override func tearDown() {
+        container.removeAll()
+        container = nil
+        super.tearDown()
+    }
+    
     func testIfCanAppendItem() {
         let object = NSObject()
         
@@ -44,12 +50,16 @@ class WeakItemContainerTests: XCTestCase {
         expect(self.container.count) == 0
     }
     
+    func testIfWhenTryingToRemoveUncontainedItemDoesNothing() {
+        expect({ [weak self] in self?.container.remove(NSObject()) }).toNot(raiseException())
+    }
+    
     func testIfCanRemoveAllObjectsAtOnce() {
         let objects = testObjectsArray()
         for object in objects {
             container.append(object)
         }
-        
+
         container.removeAll()
         
         expect(self.container.count) == 0
@@ -62,7 +72,11 @@ class WeakItemContainerTests: XCTestCase {
         container.append(objectOne)
         container.append(objectTwo)
         
-        expect(self.container.count) == 2
+        let items = container.items
+        
+        expect(items.count) == 2
+        expect(items.contains(objectOne)) == true
+        expect(items.contains(objectTwo)) == true
     }
     
     func testIfObjectsAddedToContainerCanBeDeallocated() {
