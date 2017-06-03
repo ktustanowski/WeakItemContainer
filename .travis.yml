@@ -1,4 +1,4 @@
 language: objective-c
 osx_image: xcode8.3
 script:
-- xctool test -workspace WeakItemContainer.xcworkspace -scheme WeakItemContainerTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES
+- xctool -workspace WeakItemContainer.xcworkspace -scheme WeakItemContainerTests run-tests -test-sdk iphonesimulator10.3
