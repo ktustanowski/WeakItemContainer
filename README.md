@@ -1,5 +1,6 @@
 # WeakItemContainer
-https://travis-ci.org/ktustanowski/WeakItemContainer.svg?branch=master
+![Build status](https://travis-ci.org/ktustanowski/WeakItemContainer.svg?branch=master)
+
 Generic container for holding weak references to objects. Written in Swift 3.0.
 #Why to use
 * Weak items storage
@@ -18,5 +19,3 @@ list of objects but you don't want them to be retained. [Multicast delegate patt
 ```
 github "ktustanowski/WeakItemContainer" == 0.1.1
 ```
-# Unit tests
-Included and available to run locally.
