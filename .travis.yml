@@ -1,4 +1,4 @@
 language: objective-c
 osx_image: xcode8.3
 script:
-- xctool -workspace WeakItemContainer.xcworkspace -scheme WeakItemContainerTests run-tests -test-sdk iphonesimulator10.3
+- xctool -workspace WeakItemContainer.xcworkspace -scheme WeakItemContainer run-tests -test-sdk iphonesimulator10.3
