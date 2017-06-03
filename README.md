@@ -1,5 +1,5 @@
 # WeakItemContainer
-![Build status](https://travis-ci.org/ktustanowski/WeakItemContainer.svg?branch=master)
+[![Build Status](https://travis-ci.org/ktustanowski/WeakItemContainer.svg?branch=master)](https://travis-ci.org/ktustanowski/WeakItemContainer)
 
 Generic container for holding weak references to objects. Written in Swift 3.0.
 #Why to use
