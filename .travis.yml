@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode8.3
 script:
-xcodebuild \
+- xcodebuild \
 -project WeakItemContainer.xcodeproj \
 -scheme WeakItemContainer \
 -sdk iphonesimulator \
