@@ -1,4 +1,5 @@
 # WeakItemContainer
+https://travis-ci.org/ktustanowski/WeakItemContainer.svg?branch=master
 Generic container for holding weak references to objects. Written in Swift 3.0.
 #Why to use
 * Weak items storage
