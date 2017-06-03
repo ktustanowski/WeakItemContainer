@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Nimble
 @testable import WeakItemContainer
 
 class WeakItemContainerTests: XCTestCase {
@@ -30,7 +29,7 @@ class WeakItemContainerTests: XCTestCase {
         
         container.append(object)
         
-        expect(self.container.count) == 1
+        XCTAssert(self.container.count == 1)
     }
     
     func testIfCantHaveDuplicatedObjects() {
@@ -38,7 +37,7 @@ class WeakItemContainerTests: XCTestCase {
         container.append(object)
         container.append(object)
         
-        expect(self.container.count) == 1
+        XCTAssert(self.container.count == 1)
     }
     
     func testIfCanRemoveItem() {
@@ -47,11 +46,11 @@ class WeakItemContainerTests: XCTestCase {
         
         container.remove(object)
         
-        expect(self.container.count) == 0
+        XCTAssert(self.container.count == 0)
     }
     
     func testIfWhenTryingToRemoveUncontainedItemDoesNothing() {
-        expect({ [weak self] in self?.container.remove(NSObject()) }).toNot(raiseException())
+        XCTAssertNoThrow({ [weak self] in self?.container.remove(NSObject()) })
     }
     
     func testIfCanRemoveAllObjectsAtOnce() {
@@ -62,7 +61,7 @@ class WeakItemContainerTests: XCTestCase {
 
         container.removeAll()
         
-        expect(self.container.count) == 0
+        XCTAssert(self.container.count == 0)
     }
     
     func testIfCanRetrieveObjects() {
@@ -74,9 +73,9 @@ class WeakItemContainerTests: XCTestCase {
         
         let items = container.items
         
-        expect(items.count) == 2
-        expect(items.contains(objectOne)) == true
-        expect(items.contains(objectTwo)) == true
+        XCTAssert(items.count == 2)
+        XCTAssert(items.contains(objectOne) == true)
+        XCTAssert(items.contains(objectTwo) == true)
     }
     
     func testIfObjectsAddedToContainerCanBeDeallocated() {
@@ -85,7 +84,7 @@ class WeakItemContainerTests: XCTestCase {
         
         object = nil
         
-        expect(self.container.count) == 0
+        XCTAssert(self.container.count == 0)
     }
     
     func testIfCanSeeObjectCount() {
@@ -94,7 +93,7 @@ class WeakItemContainerTests: XCTestCase {
             container.append(object)
         }
         
-        expect(self.container.count) == objects.count
+        XCTAssert(self.container.count == objects.count)
     }    
 }
 
