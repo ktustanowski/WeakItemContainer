@@ -17,5 +17,5 @@ list of objects but you don't want them to be retained. [Multicast delegate patt
 ```
 github "ktustanowski/WeakItemContainer" == 0.1.1
 ```
-#Unit tests
+# Unit tests
 Included and available to run locally.
