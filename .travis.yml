@@ -1,4 +1,9 @@
-language: objective-c
-osx_image: xcode9.3
+anguage: objective-c
+osx_image: xcode8.3
 script:
-xcodebuild -project WeakItemContainer.xcodeproj -scheme WeakItemContainer -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.3.1' test
+xcodebuild \
+-project WeakItemContainer.xcodeproj \
+-scheme WeakItemContainer \
+-sdk iphonesimulator \
+-destination 'platform=iOS Simulator,name=iPhone 6,OS=10.3' \
+test
