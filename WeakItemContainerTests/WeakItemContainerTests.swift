@@ -3,7 +3,7 @@
 //  PlayPlex
 //
 //  Created by Kamil Tustanowski on 07.10.2015.
-//  Copyright © 2015 Viacom. All rights reserved.
+//  Copyright © 2015 Kamil Tustanowski. All rights reserved.
 //
 
 import XCTest
