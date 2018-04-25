@@ -37,7 +37,7 @@ public struct WeakItemContainer<Element> {
     
     public func append(_ element: Element) {
         guard let item = element as? AnyObject else {
-            assertionFailure("Not AnyObject passed to WeakItemContainer.append!")
+            assertionFailure("Not AnyObject passed to append!")
             return
         }
         
@@ -46,7 +46,7 @@ public struct WeakItemContainer<Element> {
     
     public func remove(_ element: Element) {
         guard let item = element as? AnyObject else {
-            assertionFailure("Not AnyObject passed to WeakItemContainer.remove!")
+            assertionFailure("Not AnyObject passed to remove!")
             return
         }
         
