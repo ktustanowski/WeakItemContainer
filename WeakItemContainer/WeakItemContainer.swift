@@ -31,7 +31,7 @@ import Foundation
  */
 public struct WeakItemContainer<Element> {
     
-    fileprivate var weakItemsTable = NSHashTable<AnyObject>.weakObjects()
+    private var weakItemsTable = NSHashTable<AnyObject>.weakObjects()
     
     public init() { }
     
@@ -58,23 +58,11 @@ public struct WeakItemContainer<Element> {
     }
     
     public var count: Int {
-        return castedItems.count
+        return items.count
         
     }
 
     public var items: [Element] {
-        return castedItems
-    }
-    
-    fileprivate var castedItems: [Element] {
-        var castedItems = [Element]()
-        
-        for item in weakItemsTable.allObjects {
-            if let castedItem = item as? Element {
-                castedItems.append(castedItem)
-            }
-        }
-        
-        return castedItems
+        return weakItemsTable.allObjects.flatMap { $0 as? Element }
     }
 }
