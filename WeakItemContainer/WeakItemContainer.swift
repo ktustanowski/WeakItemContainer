@@ -63,6 +63,6 @@ public struct WeakItemContainer<Element> {
     }
 
     public var items: [Element] {
-        return weakItemsTable.allObjects.flatMap { $0 as? Element }
+        return weakItemsTable.allObjects.compactMap { $0 as? Element }
     }
 }
