@@ -31,7 +31,6 @@
 		9A13E06D1E6772C800B384B5 /* WeakItemContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakItemContainerTests.swift; sourceTree = "<group>"; };
 		9A13E06F1E6772C800B384B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A13E0791E67735A00B384B5 /* WeakItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakItemContainer.swift; sourceTree = "<group>"; };
-		9AF7C0031EE369DA00034AB0 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +55,6 @@
 		9A13E0551E6772C700B384B5 = {
 			isa = PBXGroup;
 			children = (
-				9AF7C0031EE369DA00034AB0 /* Playground.playground */,
 				9A13E0611E6772C700B384B5 /* WeakItemContainer */,
 				9A13E06C1E6772C800B384B5 /* WeakItemContainerTests */,
 				9A13E0601E6772C700B384B5 /* Products */,
@@ -341,7 +339,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -361,7 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kamil.tustanowski.WeakItemContainer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
