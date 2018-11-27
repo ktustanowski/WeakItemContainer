@@ -11,6 +11,7 @@
 		9A13E06E1E6772C800B384B5 /* WeakItemContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13E06D1E6772C800B384B5 /* WeakItemContainerTests.swift */; };
 		9A13E0701E6772C800B384B5 /* WeakItemContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A13E0621E6772C700B384B5 /* WeakItemContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A13E07A1E67735A00B384B5 /* WeakItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13E0791E67735A00B384B5 /* WeakItemContainer.swift */; };
+		D44B399521AE06A2009A842C /* WeakItemContainerTV.h in Headers */ = {isa = PBXBuildFile; fileRef = D44B399321AE06A2009A842C /* WeakItemContainerTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,9 @@
 		9A13E06D1E6772C800B384B5 /* WeakItemContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakItemContainerTests.swift; sourceTree = "<group>"; };
 		9A13E06F1E6772C800B384B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A13E0791E67735A00B384B5 /* WeakItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakItemContainer.swift; sourceTree = "<group>"; };
+		D44B399121AE06A2009A842C /* WeakItemContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeakItemContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44B399321AE06A2009A842C /* WeakItemContainerTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakItemContainerTV.h; sourceTree = "<group>"; };
+		D44B399421AE06A2009A842C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D44B398D21AE06A2009A842C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +68,7 @@
 			children = (
 				9A13E0611E6772C700B384B5 /* WeakItemContainer */,
 				9A13E06C1E6772C800B384B5 /* WeakItemContainerTests */,
+				D44B399221AE06A2009A842C /* WeakItemContainerTV */,
 				9A13E0601E6772C700B384B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +78,7 @@
 			children = (
 				9A13E05F1E6772C700B384B5 /* WeakItemContainer.framework */,
 				9A13E0681E6772C800B384B5 /* WeakItemContainerTests.xctest */,
+				D44B399121AE06A2009A842C /* WeakItemContainer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +102,15 @@
 			path = WeakItemContainerTests;
 			sourceTree = "<group>";
 		};
+		D44B399221AE06A2009A842C /* WeakItemContainerTV */ = {
+			isa = PBXGroup;
+			children = (
+				D44B399321AE06A2009A842C /* WeakItemContainerTV.h */,
+				D44B399421AE06A2009A842C /* Info.plist */,
+			);
+			path = WeakItemContainerTV;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -97,6 +119,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A13E0701E6772C800B384B5 /* WeakItemContainer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44B398E21AE06A2009A842C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44B399521AE06A2009A842C /* WeakItemContainerTV.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +169,24 @@
 			productReference = 9A13E0681E6772C800B384B5 /* WeakItemContainerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D44B399021AE06A2009A842C /* WeakItemContainerTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44B399821AE06A2009A842C /* Build configuration list for PBXNativeTarget "WeakItemContainerTV" */;
+			buildPhases = (
+				D44B398C21AE06A2009A842C /* Sources */,
+				D44B398D21AE06A2009A842C /* Frameworks */,
+				D44B398E21AE06A2009A842C /* Headers */,
+				D44B398F21AE06A2009A842C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeakItemContainerTV;
+			productName = WeakItemContainerTV;
+			productReference = D44B399121AE06A2009A842C /* WeakItemContainer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -159,6 +207,10 @@
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
+					D44B399021AE06A2009A842C = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 9A13E0591E6772C700B384B5 /* Build configuration list for PBXProject "WeakItemContainer" */;
@@ -175,6 +227,7 @@
 			targets = (
 				9A13E05E1E6772C700B384B5 /* WeakItemContainer */,
 				9A13E0671E6772C700B384B5 /* WeakItemContainerTests */,
+				D44B399021AE06A2009A842C /* WeakItemContainerTV */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +241,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9A13E0661E6772C700B384B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44B398F21AE06A2009A842C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,6 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A13E06E1E6772C800B384B5 /* WeakItemContainerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44B398C21AE06A2009A842C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +475,60 @@
 			};
 			name = Release;
 		};
+		D44B399621AE06A2009A842C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = WeakItemContainerTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kamil.tustanowski.WeakItemContainerTV;
+				PRODUCT_NAME = WeakItemContainer;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		D44B399721AE06A2009A842C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = WeakItemContainerTV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kamil.tustanowski.WeakItemContainerTV;
+				PRODUCT_NAME = WeakItemContainer;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,6 +555,15 @@
 			buildConfigurations = (
 				9A13E0771E6772C800B384B5 /* Debug */,
 				9A13E0781E6772C800B384B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44B399821AE06A2009A842C /* Build configuration list for PBXNativeTarget "WeakItemContainerTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44B399621AE06A2009A842C /* Debug */,
+				D44B399721AE06A2009A842C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
