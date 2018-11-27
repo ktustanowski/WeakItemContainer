@@ -12,6 +12,7 @@
 		9A13E0701E6772C800B384B5 /* WeakItemContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A13E0621E6772C700B384B5 /* WeakItemContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A13E07A1E67735A00B384B5 /* WeakItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13E0791E67735A00B384B5 /* WeakItemContainer.swift */; };
 		D44B399521AE06A2009A842C /* WeakItemContainerTV.h in Headers */ = {isa = PBXBuildFile; fileRef = D44B399321AE06A2009A842C /* WeakItemContainerTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D44B399921AE0CD6009A842C /* WeakItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13E0791E67735A00B384B5 /* WeakItemContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -277,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44B399921AE0CD6009A842C /* WeakItemContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
